@@ -1,42 +1,21 @@
 
-# Heading
+# Markdown file
 
-## Heading 2
+Demonstration of various markdown syntax.
 
-### Heading 3
+Seems much easier than HTML.
 
-Heading
----------
-
-To do a line break, you just use two or more spaces.  
-New line
-
-I love **bold text**.  
-I love *italics*.  
-I love ***really bold text.***
-
-> To boldy go where no one has gone before.
->
-> Multiple paragraphs!
-
-- List Item 1
-- List Item 2
-- List Item 3
-
-1. One
-2. Two
-3. Three
-
-- [ ] Item 1
-- [X] Item 2
-- [ ] Item 3
-
-
+## To do list
+- [X] Demonstrate headings
+- [X] Create a check box list
+- [X] Have a quote in the file. For example: 
+> Do or do not! There is no try!  
+> -**Yoda**
+- [X] Create a code block. For example:
 ```java
-// This is a comment
 public class Main {
   public static void main (String[] args) {
-    System.out.println("Qapla'");
+    System.out.println("This is a code block.");
   }
 }
 ```
