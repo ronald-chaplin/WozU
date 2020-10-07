@@ -8,24 +8,21 @@ import java.util.*;
 
 class Main {
   public static void main(String[] args) {    
-    String [] input = userInput();
-    output(input);
-  }
-
-  public static String[] userInput(){ 
-    Scanner scan = new Scanner(System.in);   
+     Scanner scan = new Scanner(System.in);    
     System.out.println("Enter your name:");
-    String name = scan.nextLine();
+    String name = scan.nextLine();    
     System.out.println("Enter your email:");
     String email = scan.nextLine();
-    scan.close();
-    return new String[]{name, email};
-  }
-
-  public static void output(String[] a){
-    System.out.println("User's name: " + a[0]);
-    System.out.println("Email: " + a[1]);
-    System.out.println(LocalDate.now());
+    System.out.println("Enter month of birth (1-12): ");
+    int month = scan.nextInt();
+    System.out.println("Enter day of birth : ");
+    int day = scan.nextInt();
+    System.out.println("Enter year of birth (XXXX): ");
+    int year = scan.nextInt();
+    scan.close(); 
+    System.out.println("User's name: " + name);
+    System.out.println("Email: " + email);
+    System.out.println("Birthday: " + LocalDate.of(year, month, day));
     
   }
 }
